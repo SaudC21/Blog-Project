@@ -15,43 +15,74 @@ ul {
   list-style-type: none;
 }
 
-/* Navigation bar */
+/* ------------- Navigation bar ------------- */
 
 nav {
-  background-color: white;
+  background-color: rgb(205, 217, 226);
   padding: 0 2rem;
   height: auto;
+  min-height: 8vh;
   overflow: hidden;
-  border: solid #666 2px;
+  border: solid rgb(255, 0, 0) 2px;
+}
+
+
+.blog-name {
+  font-size: 1.9rem;
+  padding: 2rem 1rem;
+  font-family: 'Roboto', sans-serif;
+  /* border: solid #666 2px; */
 }
 
 .container {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+  /* border: solid #666 2px; */
 }
 
 .nav-items > ul {
   display: flex;
   padding: 0 10px;
+  position: relative;
+  /* border: solid #666 2px; */
 }
 
 .items {
-  padding: 1.6rem 1rem;
+  padding: 1.2rem 1rem;
   font-size: 1.5rem;
   font-family: 'Roboto', sans-serif;
-}
+  /* border: solid #666 2px; */
 
-.blog-name {
-  font-size: 1.9rem;
-  padding: 2.2rem 0;
-  font-family: 'Roboto', sans-serif;
 }
 
 .social-icons {
-  padding: 3.2rem ;
+  padding: 2.5rem 2rem;
+  /* border: solid #666 2px; */
 }
 
 .social-icons i{
   padding: 0rem 0.2rem;
+  size: 1rem;
+  /* border: solid #666 2px; */
+}
+
+.social-icons i:hover{
+  color: #a1c4cf;
+}
+
+/* ------ Viewpot less than or equal to 1200 (Tablet view)------ */
+
+@media (max-width: 1200px) {
+
+}
+
+/* ------ Viewpot less than or equal to 900 (Phone view) ------ */
+
+@media (max-width: 900px) {
+  .nav-items {
+    background-color: rgba(255, 75, 100, 0.3);
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
 }
