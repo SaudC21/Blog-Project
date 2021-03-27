@@ -149,7 +149,7 @@ nav {
 }
 
 .post-1 {
-  background-image: url("../images/post-11.jpg");
+  background-image: url("../images/cpu.jpg");
   height: 250px;
   width: 220px;
   background-size: cover;
@@ -163,7 +163,7 @@ nav {
 }
 
 .post-2 {
-  background-image: url("../images/post-11.jpg");
+  background-image: url("../images/gpu.jpg");
   height: 250px;
   width: 220px;
   background-size: cover;
