@@ -1,9 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Share+Tech&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Share+Tech&family=Ubuntu:wght@500&display=swap');
-
-html,
-body {
+html, body {
   margin: 0;
   box-sizing: border-box;
   overflow-x: hidden;
@@ -52,13 +50,12 @@ nav {
   cursor: pointer;
 }
 
-.link-1:hover a,
-.link-2:hover a,
-.link-3:hover a{
+.link-1:hover a, .link-2:hover a, .link-3:hover a {
   color: #fff;
 }
 
 /* --- Navigation bar blog name --- */
+
 .blog-name {
   font-size: 1.9rem;
   padding: 2rem 1rem;
@@ -67,6 +64,7 @@ nav {
 }
 
 /* --- Navigation bar middle list --- */
+
 .top-nav-flex {
   display: flex;
   flex-direction: row;
@@ -96,11 +94,12 @@ nav {
 }
 
 /* --- Navigation bar icons --- */
+
 .social-icons {
   padding: 2.5rem 2rem;
 }
 
-.social-icons i{
+.social-icons i {
   padding: 0rem 0.2rem;
   size: 1rem;
 }
@@ -162,9 +161,9 @@ nav {
 }
 
 .card-img {
-  display: block;
-  min-height: 260px;
-  /* max-width: ; */
+  position: relative;
+  height: 300px;
+  width: minmax(300, 100vh);
   border: solid rgb(0, 0, 0) 2px;
 }
 
@@ -210,30 +209,54 @@ nav {
   transition: 0.2s;
 }
 
-.card-button:hover,
-.card-button:active {
+.card-button:hover, .card-button:active {
   background-color: #c2cffc;
 }
 
-.card-button span:hover,
-.card-button span:active {
+.card-button span:hover, .card-button span:active {
   margin-left: 1.5rem;
 }
+
 .aside {
   grid-area: 1 / 4 / 13 / 5;
   border: solid #8f8 2px;
 }
 
-
-
 /* ------ Viewpot less than or equal to 1200 (Tablet view)------ */
 
 @media (max-width: 1200px) {
-
+  .content {
+    grid-area: 1 / 2 / 13 / 4;
+    border: solid #8f8 2px;
+  }
+  .aside {
+    grid-area: 1 / 4 / 13 / 5;
+    border: solid #8f8 2px;
+  }
+  .posts-grid {
+    display: grid;
+    width: auto;
+    grid-gap: 3rem;
+    grid-template-columns: repeat(1, 1fr);
+  }
 }
-
-/* ------ Viewpot less than or equal to 900 (Phone view) ------ */
-
-@media (max-width: 900px) {
-  
-}
+  /* ------ Viewpot less than or equal to 900 (Phone view) ------ */
+  @media (max-width: 900px) {
+    .main-content {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      grid-template-rows: repeat(12, 1fr);
+      grid-column-gap: 0;
+      grid-row-gap: 0px;
+      height: auto;
+      border: solid rgb(25, 0, 255) 2px;
+    }
+    .content {
+      grid-area: 1 / 1 / 12 / 5;
+        border: solid #8f8 2px;
+    }
+    .aside {
+      grid-area: 12 / 1 / 13 / 5;
+      border: solid #8f8 2px;
+    }
+  }
