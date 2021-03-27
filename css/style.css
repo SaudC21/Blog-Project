@@ -164,7 +164,7 @@ nav {
 .card-img {
   display: block;
   min-height: 260px;
-  max-width: ;
+  /* max-width: ; */
   border: solid rgb(0, 0, 0) 2px;
 }
 
