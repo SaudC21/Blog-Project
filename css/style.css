@@ -37,7 +37,7 @@ li {
 /* ------------- Navigation bar ------------- */
 
 nav {
-  background-color: rgb(43, 195, 255);
+  background-color: rgb(205, 241, 255);
   padding: 0rem;
   height: 0;
   min-height: 8vh;
@@ -46,7 +46,7 @@ nav {
 }
 
 .nav-link:hover {
-  background-color: rgb(0, 106, 206);
+  background-color: rgba(0, 132, 255, 0.8);
   cursor: pointer;
 }
 
@@ -58,7 +58,7 @@ nav {
 
 .blog-name {
   font-size: 1.9rem;
-  padding: 2rem 1rem;
+  padding: 1.5rem 1rem;
   display: block;
   font-family: 'Roboto', sans-serif;
 }
@@ -80,13 +80,13 @@ nav {
   display: flex;
   margin: 0;
   height: 6rem;
-  padding: 0 10px;
+  padding: 0em 10px;
   position: relative;
   border: solid rgb(255, 0, 0) 0px;
 }
 
 .nav-link {
-  padding: 2.2rem 1rem;
+  padding: 1.7rem 1rem;
   font-size: 1.5rem;
   font-family: 'Roboto', sans-serif;
   position: relative;
@@ -96,7 +96,7 @@ nav {
 /* --- Navigation bar icons --- */
 
 .social-icons {
-  padding: 2.5rem 2rem;
+  padding: 2.1rem 2rem;
 }
 
 .social-icons i {
@@ -126,7 +126,6 @@ nav {
   grid-template-rows: repeat(12, 1fr);
   grid-column-gap: 10px;
   height: auto;
-  border: solid rgb(25, 0, 255) 2px;
 }
 
 .content {
@@ -139,6 +138,7 @@ nav {
   grid-gap: 3rem;
   grid-template-columns: repeat(2, 1fr);
   align-items: start;
+
 }
 
 .grid-item {
@@ -149,6 +149,7 @@ nav {
   box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.1);
   cursor: pointer;
   transition: 0.2s;
+  /* border: solid rgb(241, 0, 0) 2px; */
 }
 
 .grid-item:hover {
@@ -217,38 +218,112 @@ nav {
   flex-direction: column;
   padding: 0 1rem;
   grid-area: 1 / 4 / 13 / 5;
-  border: solid rgb(255, 136, 0) 2px;
+  /* border: solid rgb(255, 136, 0) 2px; */
 }
 
 .personal-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   margin-bottom: 50px;
-  border: solid rgb(0, 255, 170) 2px;
+  margin: 0 auto;
+  /* border: solid rgb(0, 255, 170) 2px; */
 }
 
 .personal-img {
-  
-  height: 300px;
+  margin-top: 130px;
+  height: 200px;
+  border-radius: 100%;
+}
 
+.personal-img-cap {
+  margin-top: 1rem;
+  text-align: center;
+  font-family: "Roboto";
 }
 
 .popular-posts {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   margin-bottom: 50px;
-  border: solid rgb(0, 255, 170) 2px;
+  /* border: solid rgb(0, 255, 170) 2px; */
+}
+
+.popular-post-1 {
+  margin-bottom: 25px;
+  height: 200px;
+  text-align: center;
+  /* border: solid rgb(212, 0, 255) 2px; */
+}
+
+.popular-post-2 {
+  margin-bottom: 10px;
+  text-align: center;
+  /* border: solid rgb(212, 0, 255) 2px; */
+}
+
+.popular-caption {
+  font-family: "Share Tech", sans-serif;
 }
 
 .popular-header {
-  font-family: "Share Tech";
+  font-family: "Share Tech", sans-serif;
+}
 
+.popular-img {
+  height: 160px;
+  width: 180px;
 }
 
 .newsletter {
-
-  border: solid rgb(0, 255, 170) 2px;
+  padding: 1rem;
+  font-family: "Roboto", sans-serif;
+  background-color: #fff;
+  /* border: solid #0d0d0d 2px; */
 }
 
-.popular-post {
-  height: 100px;
-  width: 100px;
+.form-container {
+  padding: 20px;
+  background-color: #eee;
+}
+
+input{
+  width: 100%;
+  padding: 12px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+input[type=submit] {
+  background-color: #4caf4fd7;
+  color: white;
+  border: none;
+}
+
+input[type=submit]:hover {
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+}
+
+/* ------------ Footer ------------ */
+
+footer {
+  position: relative;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 40px;
+  background-color: rgb(68, 68, 68);
+  color: white;
+  text-align: center;
+}
+
+.copyright {
+  padding: 20px auto;
 }
 
 /* ------ Viewpot less than or equal to 1500 (Tablet view)------ */
@@ -271,19 +346,17 @@ nav {
   @media (max-width: 900px) {
     .main-content {
       display: grid;
-      grid-template-columns: repeat(4, 1fr);
-      height: auto;
+      grid-template-columns: 1fr;
+      grid-template-rows: repeat(6, 1fr);
     }
     .content {
-      grid-area: 1 / 1 / 12 / 5;
+      grid-area: 1 / 1 / 5 / 2;
     }
     .aside {
-      grid-area: 12 / 1 / 13 / 5;
+      grid-area: 5 / 1 / 7 / 2;
     }
     .card-img {
       min-width: 55em;
       max-width: 100vh;
-    }
-    h2 {
     }
   }
