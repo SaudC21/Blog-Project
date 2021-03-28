@@ -222,9 +222,9 @@ nav {
   border: solid #8f8 2px;
 }
 
-/* ------ Viewpot less than or equal to 1200 (Tablet view)------ */
+/* ------ Viewpot less than or equal to 1500 (Tablet view)------ */
 
-@media (max-width: 1200px) {
+@media (max-width: 1500px) {
   .content {
     grid-area: 1 / 2 / 13 / 4;
     border: solid #8f8 2px;
@@ -238,6 +238,9 @@ nav {
     width: auto;
     grid-gap: 3rem;
     grid-template-columns: repeat(1, 1fr);
+  }
+  .card-img {
+    width: 36em;
   }
 }
   /* ------ Viewpot less than or equal to 900 (Phone view) ------ */
@@ -258,5 +261,9 @@ nav {
     .aside {
       grid-area: 12 / 1 / 13 / 5;
       border: solid #8f8 2px;
+    }
+    .card-img {
+      min-width: 55em;
+      max-width: 100vh;
     }
   }
