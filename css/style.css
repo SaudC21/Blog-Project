@@ -1,12 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Share+Tech&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Share+Tech&family=Ubuntu:wght@500&display=swap');
-
-html,
-body {
+html, body {
   margin: 0;
   box-sizing: border-box;
   overflow-x: hidden;
+  background-color: #eee;
 }
 
 h1 {
@@ -51,13 +50,12 @@ nav {
   cursor: pointer;
 }
 
-.link-1:hover a,
-.link-2:hover a,
-.link-3:hover a{
+.link-1:hover a, .link-2:hover a, .link-3:hover a {
   color: #fff;
 }
 
 /* --- Navigation bar blog name --- */
+
 .blog-name {
   font-size: 1.9rem;
   padding: 2rem 1rem;
@@ -66,6 +64,7 @@ nav {
 }
 
 /* --- Navigation bar middle list --- */
+
 .top-nav-flex {
   display: flex;
   flex-direction: row;
@@ -95,11 +94,12 @@ nav {
 }
 
 /* --- Navigation bar icons --- */
+
 .social-icons {
   padding: 2.5rem 2rem;
 }
 
-.social-icons i{
+.social-icons i {
   padding: 0rem 0.2rem;
   size: 1rem;
 }
@@ -126,8 +126,8 @@ nav {
   grid-template-rows: repeat(12, 1fr);
   grid-column-gap: 10px;
   grid-row-gap: 0px;
-  height: 1666px;
-  border: solid rgb(174, 34, 255) 2px;
+  height: auto;
+  border: solid rgb(25, 0, 255) 2px;
 }
 
 .content {
@@ -135,54 +135,86 @@ nav {
   border: solid #8f8 2px;
 }
 
-.posts-horizental {
-  display: flex;
-  justify-content: space-between;
-  height: 550px;
+.posts-grid {
+  display: grid;
+  width: auto;
+  grid-gap: 3rem;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: start;
   border: solid rgb(255, 0, 0) 2px;
+}
+
+.grid-item {
+  background-color: #fff;
+  height: auto;
+  border-radius: 0.4rem;
   overflow: hidden;
+  box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: 0.2s;
+  border: solid rgb(200, 100, 200) 2px;
 }
 
-.post-1-card {
-  height: 370px;
-  border: solid rgb(190, 50, 50) 2px;
+.grid-item:hover {
+  transform: translateY(-0.5%);
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.5);
 }
 
-.post-1 {
-  background-image: url("../images/cpu.jpg");
-  height: 250px;
-  width: 220px;
-  background-size: cover;
-  background-repeat: no-repeat;
-  border: solid aqua 2px;
+.card-img {
+  position: relative;
+  height: 300px;
+  width: minmax(300, 100vh);
+  border: solid rgb(0, 0, 0) 2px;
 }
 
-.post-2-card {
-  height: 370px;
-  border: solid rgb(190, 50, 50) 2px;
+.card-content {
+  padding: 1rem;
 }
 
-.post-2 {
-  background-image: url("../images/gpu.jpg");
-  height: 250px;
-  width: 220px;
-  background-size: cover;
-  background-repeat: no-repeat;
-  border: solid aqua 2px;
+.card-header {
+  font-size: 2.3rem;
+  font-weight: 500;
+  color: #0d0d0d;
+  margin-top: 0;
+  border: solid rgb(255, 0, 0) 2px;
 }
 
-.post-3-card {
-  height: 370px;
-  border: solid rgb(190, 50, 50) 2px;
+.card-text {
+  font-size: 1.6rem;
+  letter-spacing: 0.1rem;
+  line-height: 1.7;
+  color: #3d3d3d;
+  margin-bottom: 2.2rem;
+  margin-top: 0;
+  border: solid rgb(255, 0, 0) 2px;
 }
 
-.post-3 {
-  background-image: url("../images/post-11.jpg");
-  width: 150px;
-  height: 250px;
-  background-size: cover;
-  background-repeat: no-repeat;
-  border: solid aqua 2px;
+.card-button {
+  display: block;
+  width: auto;
+  padding: 1.5rem;
+  font-size: 1.5rem;
+  text-align: center;
+  color: #3363ff;
+  background-color: #d8e0fd;
+  border: none;
+  border-radius: 0.4rem;
+  transition: 0.2s;
+  cursor: pointer;
+  letter-spacing: 0.1rem;
+}
+
+.card-button span {
+  margin-left: 1rem;
+  transition: 0.2s;
+}
+
+.card-button:hover, .card-button:active {
+  background-color: #c2cffc;
+}
+
+.card-button span:hover, .card-button span:active {
+  margin-left: 1.5rem;
 }
 
 .aside {
@@ -190,16 +222,41 @@ nav {
   border: solid #8f8 2px;
 }
 
-
-
 /* ------ Viewpot less than or equal to 1200 (Tablet view)------ */
 
 @media (max-width: 1200px) {
-
+  .content {
+    grid-area: 1 / 2 / 13 / 4;
+    border: solid #8f8 2px;
+  }
+  .aside {
+    grid-area: 1 / 4 / 13 / 5;
+    border: solid #8f8 2px;
+  }
+  .posts-grid {
+    display: grid;
+    width: auto;
+    grid-gap: 3rem;
+    grid-template-columns: repeat(1, 1fr);
+  }
 }
-
-/* ------ Viewpot less than or equal to 900 (Phone view) ------ */
-
-@media (max-width: 900px) {
-
-}
+  /* ------ Viewpot less than or equal to 900 (Phone view) ------ */
+  @media (max-width: 900px) {
+    .main-content {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      grid-template-rows: repeat(12, 1fr);
+      grid-column-gap: 0;
+      grid-row-gap: 0px;
+      height: auto;
+      border: solid rgb(25, 0, 255) 2px;
+    }
+    .content {
+      grid-area: 1 / 1 / 12 / 5;
+        border: solid #8f8 2px;
+    }
+    .aside {
+      grid-area: 12 / 1 / 13 / 5;
+      border: solid #8f8 2px;
+    }
+  }

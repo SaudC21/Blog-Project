@@ -44,37 +44,84 @@
 
   <header>
     <section class="head-conatiner">
-      <h1>Tech Blog</h1>
+      <h1></h1>
     </section>
   </header>
 
-  <!-------- Main section -------->
+  <!-------- Main section 1920*1200-------->
 
-  <main>
-    <div class="main-content">
-      <section class="content">
-        <h2>Blog posts</h2>
-        <div class="posts-horizental">
+  <main class="main-content">
+    <section class="content">
+      <h2>Blog posts</h2>
+      <div class="posts-grid">
+        <div class="grid-item">
           <div class="post-1-card">
-            <div class="post-1"></div>
-            <figcaption class="post-1-caption">I'm Post 1</figcaption>
+            <img class="card-img" src="images/amd.jpg" alt="AMD CPUs">
+            <figcaption class="card-content">
+              <h3 class="card-header">CPU Generations</h3>
+              <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+              <button class="card-button">Read more <span>&rarr;</span></button>
+            </figcaption>
           </div>
-          <div class="post-2-card">
-            <div class="post-2"></div>
-            <figcaption class="post-2-caption">I'm Post 2</figcaption>
-          </div>
-          <!-- <div class="post-3-card">
-            <div class="post-3"></div>
-            <figcaption class="post-3-caption">I'm Post 3</figcaption>
-          </div> -->
         </div>
-      </section>
-      <aside class="aside">
-        <h2>Aside</h2>
-      </aside>
-    </div>
+        <div class="grid-item">
+          <div class="post-2-card">
+            <img class="card-img" src="images/gpu.jpg" alt="GPU">
+            <figcaption class="card-content">
+              <h3 class="card-header">GPU 3000 Gen</h3>
+              <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+              <button class="card-button">Read more <span>&rarr;</span></button>
+            </figcaption>
+          </div>
+        </div>
+        <div class="grid-item">
+          <div class="post-3-card">
+            <img class="card-img" src="images/pc.jpg" alt="CPU">
+            <figcaption class="card-content">
+              <h3 class="card-header">PC Components</h3>
+              <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+              <button class="card-button">Read more <span>&rarr;</span></button>
+            </figcaption>
+          </div>
+        </div>
+        <div class="grid-item">
+          <div class="post-4-card">
+            <img class="card-img" src="images/coins.jpg" alt="CPU">
+            <figcaption class="card-content">
+              <h3 class="card-header">Digital Currency</h3>
+              <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+              <button class="card-button">Read more <span>&rarr;</span></button>
+            </figcaption>
+          </div>
+        </div>
+      </div>
+    </section>
+    <aside class="aside">
+      <h2>Aside</h2>
+    </aside>
   </main>
+      <!-------- Navigation bar -------->
 
+  <footer>
+    <div class="top-nav top-nav-flex">
+      <div class="blog-name">
+        <a href="#">PC Hub</a>
+      </div>
+      <div>
+        <ul class="nav-items">
+          <li class="nav-link link-1"><a href="#">Home</a></li>
+          <li class="nav-link link-2"><a href="#">Gallery</a></li>
+          <li class="nav-link link-3"><a href="#">Contact</a></li>
+        </ul>
+      </div>
+      <div href="#" class="social-icons">
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-youtube"></i></a>
+      </div>
+    </div>
+  </footer>
 </body>
 
 </html>
