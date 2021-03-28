@@ -16,14 +16,14 @@ h1 {
   text-align: center;
   text-transform: uppercase;
   position: absolute;
-  /* transform: translate(-50%, -50%); */
 }
 
 h2 {
   padding-top: 30px;
   padding-bottom: 15px;
-  font-family: 'Ubuntu', sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-size: 32px;
+  font-style: italic;
 }
 
 a {
@@ -125,14 +125,12 @@ nav {
   grid-template-columns: repeat(5, 1fr);
   grid-template-rows: repeat(12, 1fr);
   grid-column-gap: 10px;
-  grid-row-gap: 0px;
   height: auto;
   border: solid rgb(25, 0, 255) 2px;
 }
 
 .content {
   grid-area: 1 / 2 / 13 / 4;
-  border: solid #8f8 2px;
 }
 
 .posts-grid {
@@ -141,7 +139,6 @@ nav {
   grid-gap: 3rem;
   grid-template-columns: repeat(2, 1fr);
   align-items: start;
-  border: solid rgb(255, 0, 0) 2px;
 }
 
 .grid-item {
@@ -152,7 +149,6 @@ nav {
   box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.1);
   cursor: pointer;
   transition: 0.2s;
-  border: solid rgb(200, 100, 200) 2px;
 }
 
 .grid-item:hover {
@@ -164,7 +160,6 @@ nav {
   position: relative;
   height: 300px;
   width: minmax(300, 100vh);
-  border: solid rgb(0, 0, 0) 2px;
 }
 
 .card-content {
@@ -175,8 +170,7 @@ nav {
   font-size: 2.3rem;
   font-weight: 500;
   color: #0d0d0d;
-  margin-top: 0;
-  border: solid rgb(255, 0, 0) 2px;
+  font-family: "Ubuntu", sans-serif;
 }
 
 .card-text {
@@ -184,9 +178,8 @@ nav {
   letter-spacing: 0.1rem;
   line-height: 1.7;
   color: #3d3d3d;
-  margin-bottom: 2.2rem;
-  margin-top: 0;
-  border: solid rgb(255, 0, 0) 2px;
+  margin-bottom: 2.5rem;
+  font-family: "Ubuntu";
 }
 
 .card-button {
@@ -202,6 +195,7 @@ nav {
   transition: 0.2s;
   cursor: pointer;
   letter-spacing: 0.1rem;
+  font-family: "Ubuntu";
 }
 
 .card-button span {
@@ -217,9 +211,44 @@ nav {
   margin-left: 1.5rem;
 }
 
+/* ------------ Aside --------------- */
 .aside {
+  display: flex;
+  flex-direction: column;
+  padding: 0 1rem;
   grid-area: 1 / 4 / 13 / 5;
-  border: solid #8f8 2px;
+  border: solid rgb(255, 136, 0) 2px;
+}
+
+.personal-info {
+  margin-bottom: 50px;
+  border: solid rgb(0, 255, 170) 2px;
+}
+
+.personal-img {
+  
+  height: 300px;
+
+}
+
+.popular-posts {
+  margin-bottom: 50px;
+  border: solid rgb(0, 255, 170) 2px;
+}
+
+.popular-header {
+  font-family: "Share Tech";
+
+}
+
+.newsletter {
+
+  border: solid rgb(0, 255, 170) 2px;
+}
+
+.popular-post {
+  height: 100px;
+  width: 100px;
 }
 
 /* ------ Viewpot less than or equal to 1500 (Tablet view)------ */
@@ -227,16 +256,11 @@ nav {
 @media (max-width: 1500px) {
   .content {
     grid-area: 1 / 2 / 13 / 4;
-    border: solid #8f8 2px;
   }
   .aside {
     grid-area: 1 / 4 / 13 / 5;
-    border: solid #8f8 2px;
   }
   .posts-grid {
-    display: grid;
-    width: auto;
-    grid-gap: 3rem;
     grid-template-columns: repeat(1, 1fr);
   }
   .card-img {
@@ -248,22 +272,18 @@ nav {
     .main-content {
       display: grid;
       grid-template-columns: repeat(4, 1fr);
-      grid-template-rows: repeat(12, 1fr);
-      grid-column-gap: 0;
-      grid-row-gap: 0px;
       height: auto;
-      border: solid rgb(25, 0, 255) 2px;
     }
     .content {
       grid-area: 1 / 1 / 12 / 5;
-        border: solid #8f8 2px;
     }
     .aside {
       grid-area: 12 / 1 / 13 / 5;
-      border: solid #8f8 2px;
     }
     .card-img {
       min-width: 55em;
       max-width: 100vh;
+    }
+    h2 {
     }
   }
