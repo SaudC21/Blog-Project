@@ -1,0 +1,318 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Share+Tech&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Share+Tech&family=Ubuntu:wght@500&display=swap');
+html, body {
+   margin: 0;
+   box-sizing: border-box;
+   overflow-x: hidden;
+   background-color: #eee;
+}
+
+h1 {
+   margin: 120px auto;
+   padding: 0;
+   font-family: 'Share Tech', sans-serif;
+   font-size: 70px;
+   text-align: center;
+   text-transform: uppercase;
+   position: absolute;
+}
+
+h2 {
+   padding-top: 30px;
+   padding-bottom: 15px;
+   font-family: 'Roboto', sans-serif;
+   font-size: 32px;
+   font-style: italic;
+}
+
+a {
+   text-decoration: none;
+}
+
+li {
+   list-style-type: none;
+}
+
+/* ------------- Navigation bar ------------- */
+
+nav {
+   background-color: rgb(205, 241, 255);
+   padding: 0rem;
+   height: 0;
+   min-height: 8vh;
+   overflow: hidden;
+   position: relative;
+}
+
+.nav-link:hover {
+   background-color: rgba(0, 132, 255, 0.8);
+   cursor: pointer;
+}
+
+.link-1:hover a, .link-2:hover a, .link-3:hover a {
+   color: #fff;
+}
+
+/* --- Navigation bar blog name --- */
+
+.blog-name {
+   font-size: 1.9rem;
+   padding: 1.5rem 1rem;
+   display: block;
+   font-family: 'Roboto', sans-serif;
+}
+
+/* --- Navigation bar middle list --- */
+
+.top-nav-flex {
+   display: flex;
+   flex-direction: row;
+   flex-wrap: wrap;
+   border: solid rgb(217, 255, 0) 0px;
+}
+
+.top-nav {
+   justify-content: space-between;
+}
+
+.nav-items {
+   display: flex;
+   margin: 0;
+   height: 6rem;
+   padding: 0em 10px;
+   position: relative;
+   border: solid rgb(255, 0, 0) 0px;
+}
+
+.nav-link {
+   padding: 1.7rem 1rem;
+   font-size: 1.5rem;
+   font-family: 'Roboto', sans-serif;
+   position: relative;
+   border: solid rgb(14, 226, 138) 0px;
+}
+
+.link-1:hover li, .link-2:hover li, .link-3:hover li {
+   color: #fff;
+}
+
+/* --- Navigation bar icons --- */
+
+.social-icons {
+   padding: 2.1rem 2rem;
+}
+
+.social-icons i {
+   padding: 0rem 0.2rem;
+   size: 1rem;
+}
+
+.social-icons i:hover {
+   color: #a1c4cf;
+}
+
+/* ------------- Header Section ------------- */
+
+.head-conatiner {
+   height: 800px;
+   background-image: url("../images/header.png");
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+
+/* ------------- Main Section ------------- */
+
+.main-content {
+   display: grid;
+   grid-template-columns: repeat(5, 1fr);
+   grid-template-rows: repeat(12, 1fr);
+   grid-column-gap: 10px;
+   height: auto;
+}
+
+.content {
+   grid-area: 1 / 2 / 13 / 4;
+   display: flex;
+   flex-direction: column;
+}
+
+p {
+   letter-spacing: 0.08rem;
+   line-height: 1.7;
+}
+
+.cpu-img {
+   border-radius: 5%;
+   max-height: 400px;
+   max-width: 400px;
+   justify-self: center;
+}
+
+.cpu-caption {
+   margin: 5px 20px;
+}
+
+.author-img {
+   margin-top: 50px;
+   height: 150px;
+   border-radius: 100%;
+}
+
+.author-bio {
+   width: 200px;
+   cursor: pointer;
+   background-color: #fff;
+}
+
+.author-bio:hover {
+   background-color: #555;
+   color: #fff;
+}
+
+/* ------------ Aside --------------- */
+
+.aside {
+   display: flex;
+   flex-direction: column;
+   padding: 0 1rem;
+   grid-area: 1 / 4 / 13 / 5;
+}
+
+.personal-info {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   margin-bottom: 50px;
+   margin: 0 auto;
+}
+
+.personal-img {
+   margin-top: 130px;
+   height: 200px;
+   border-radius: 100%;
+}
+
+.personal-img-cap {
+   margin-top: 1rem;
+   text-align: center;
+   font-family: "Roboto";
+}
+
+.popular-posts {
+   margin-top: 30px;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   margin-bottom: 50px;
+}
+
+.popular-post-1 {
+   margin-bottom: 25px;
+   height: 200px;
+   text-align: center;
+}
+
+.popular-post-2 {
+   margin-bottom: 10px;
+   text-align: center;
+}
+
+.popular-caption, .popular-header {
+   font-family: "Share Tech", sans-serif;
+}
+
+.popular-img {
+   height: 160px;
+   width: 180px;
+}
+
+.newsletter {
+   padding: 0rem 1rem;
+   font-family: "Roboto", sans-serif;
+   background-color: #fff;
+}
+
+.form-container {
+   margin: 15px 0;
+   padding: 20px;
+   background-color: #eee;
+   /* border: solid #0d0d0d 2px; */
+}
+
+input {
+   width: 100%;
+   padding: 12px;
+   margin: 8px 0;
+   display: inline-block;
+   border: 1px solid #ccc;
+   box-sizing: border-box;
+}
+
+input[type=submit] {
+   background-color: #4caf4fd7;
+   color: white;
+   border: none;
+}
+
+input[type=submit]:hover {
+   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+   cursor: pointer;
+}
+
+/* ------------ Footer ------------ */
+
+footer {
+   position: relative;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   height: 40px;
+   background-color: rgb(68, 68, 68);
+   color: white;
+   text-align: center;
+}
+
+.copyright {
+   padding: 20px auto;
+   text-decoration: underline;
+}
+
+/* ------ Viewpot less than or equal to 1500 (Tablet view)------ */
+
+@media (max-width: 800px) {
+   .main-content {
+      margin: 0rem 2rem;
+   }
+   .content {
+      grid-area: 1 / 1 / 13 / 5;
+   }
+   .aside {
+      grid-area: 1 / 5 / 13 / 6;
+   }
+   .posts-grid {
+      grid-template-columns: repeat(1, 1fr);
+   }
+   .card-img {
+      width: 36em;
+   }
+}
+
+/* ------ Viewpot less than or equal to 900 (Phone view) ------ */
+
+@media (max-width: 480px) {
+   .main-content {
+      display: grid;
+      grid-template-columns: 1fr;
+      margin: 0 1rem;
+      grid-template-rows: repeat(6, 1fr);
+   }
+   .content {
+      grid-area: 1 / 1 / 5 / 2;
+   }
+   .aside {
+      grid-area: 5 / 1 / 7 / 2;
+   }
+
+}

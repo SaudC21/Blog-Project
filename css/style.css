@@ -326,24 +326,32 @@ footer {
   padding: 20px auto;
 }
 
+.copyright > p {
+  letter-spacing: 0.1rem;
+  line-height: 1.7;
+}
+
 /* ------ Viewpot less than or equal to 1500 (Tablet view)------ */
 
-@media (max-width: 1500px) {
-  .content {
-    grid-area: 1 / 2 / 13 / 4;
-  }
-  .aside {
-    grid-area: 1 / 4 / 13 / 5;
-  }
-  .posts-grid {
+@media (max-width: 800px) {
+  .main-content {
+    margin: 0rem 2rem;
+ }
+ .content {
+    grid-area: 1 / 1 / 13 / 5;
+ }
+ .aside {
+    grid-area: 1 / 5 / 13 / 6;
+ }
+ .posts-grid {
     grid-template-columns: repeat(1, 1fr);
-  }
-  .card-img {
+ }
+ .card-img {
     width: 36em;
-  }
+ }
 }
   /* ------ Viewpot less than or equal to 900 (Phone view) ------ */
-  @media (max-width: 900px) {
+  @media (max-width: 500px) {
     .main-content {
       display: grid;
       grid-template-columns: 1fr;
