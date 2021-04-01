@@ -300,14 +300,11 @@ footer {
    .posts-grid {
       grid-template-columns: repeat(1, 1fr);
    }
-   .card-img {
-      width: 36em;
-   }
 }
 
-/* ------ Viewpot less than or equal to 900 (Phone view) ------ */
+/* ------ Viewpot less than or equal to 600 (Phone view) ------ */
 
-@media (max-width: 480px) {
+@media (max-width: 600px) {
    .main-content {
       display: grid;
       grid-template-columns: 1fr;
