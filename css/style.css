@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Share+Tech&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Share+Tech&family=Ubuntu:wght@500&display=swap');
+
 html, body {
   margin: 0;
   box-sizing: border-box;
@@ -34,7 +35,7 @@ li {
 /* ------------- Navigation bar ------------- */
 
 nav {
-  background-color: rgb(205, 241, 255);
+  background-color: rgb(204, 225, 233);
   padding: 0rem;
   height: 0;
   min-height: 8vh;
@@ -43,7 +44,7 @@ nav {
 }
 
 .nav-link:hover {
-  background-color: rgba(0, 132, 255, 0.8);
+  background-color: rgba(0, 76, 148, 0.8);
   cursor: pointer;
 }
 
@@ -66,7 +67,6 @@ nav {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  border: solid rgb(217, 255, 0) 0px;
 }
 
 .top-nav {
@@ -79,7 +79,6 @@ nav {
   height: 6rem;
   padding: 0em 10px;
   position: relative;
-  border: solid rgb(255, 0, 0) 0px;
 }
 
 .nav-link {
@@ -87,7 +86,6 @@ nav {
   font-size: 1.5rem;
   font-family: 'Roboto', sans-serif;
   position: relative;
-  border: solid rgb(14, 226, 138) 0px;
 }
 
 /* --- Navigation bar icons --- */
@@ -243,20 +241,17 @@ nav {
   flex-direction: column;
   align-items: center;
   margin-bottom: 50px;
-  /* border: solid rgb(0, 255, 170) 2px; */
 }
 
 .popular-post-1 {
   margin-bottom: 25px;
   height: 200px;
   text-align: center;
-  /* border: solid rgb(212, 0, 255) 2px; */
 }
 
 .popular-post-2 {
   margin-bottom: 10px;
   text-align: center;
-  /* border: solid rgb(212, 0, 255) 2px; */
 }
 
 .popular-caption {
@@ -342,7 +337,7 @@ footer {
   }
 }
 
-/* ------ Viewpot less than or equal to 500 (Phone view) ------ */
+/* ------ Viewpot less than or equal to 600 (Phone view) ------ */
 
 @media (max-width: 600px) {
   .main-content {
