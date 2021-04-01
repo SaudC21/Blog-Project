@@ -280,6 +280,11 @@ footer {
    text-decoration: underline;
 }
 
+.copyright > p {
+   letter-spacing: 0.1rem;
+   line-height: 1.7;
+ }
+
 /* ------ Viewpot less than or equal to 1500 (Tablet view)------ */
 
 @media (max-width: 800px) {

@@ -9,21 +9,18 @@ html, body {
 }
 
 h1 {
-  margin: 120px auto;
-  padding: 0;
-  font-family: 'Share Tech', sans-serif;
-  font-size: 70px;
-  text-align: center;
-  text-transform: uppercase;
-  position: absolute;
-}
-
-h2 {
   padding-top: 30px;
   padding-bottom: 15px;
   font-family: 'Roboto', sans-serif;
-  font-size: 32px;
+  font-size: 40px;
   font-style: italic;
+  font-weight: 800;
+}
+
+h2 {
+  padding-bottom: 15px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 32px;
 }
 
 a {
@@ -333,7 +330,7 @@ footer {
   line-height: 1.7;
 }
 
-/* ------ Viewpot less than or equal to 1500 (Tablet view)------ */
+/* ------ Viewpot less than or equal to 800 (Tablet view)------ */
 
 @media (max-width: 800px) {
   .main-content {
@@ -352,7 +349,7 @@ footer {
     width: 36em;
  }
 }
-  /* ------ Viewpot less than or equal to 900 (Phone view) ------ */
+  /* ------ Viewpot less than or equal to 500 (Phone view) ------ */
   @media (max-width: 500px) {
     .main-content {
       display: grid;
