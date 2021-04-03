@@ -1,123 +1,10 @@
+@import url(./navigation.css);
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Share+Tech&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Share+Tech&family=Ubuntu:wght@500&display=swap');
 
-html, body {
-   margin: 0;
-   box-sizing: border-box;
-   overflow-x: hidden;
-   background-color: #eee;
-}
-
-h1 {
-   padding-top: 30px;
-   padding-bottom: 15px;
-   font-family: 'Roboto', sans-serif;
-   font-size: 40px;
-   font-style: italic;
-   font-weight: 800;
-}
-
-h2 {
-   padding-bottom: 15px;
-   font-family: 'Roboto', sans-serif;
-   font-size: 32px;
-}
-
-a {
-   text-decoration: none;
-}
-
-li {
-   list-style-type: none;
-}
-
 p {
    font-family: 'Roboto', sans-serif;
-}
-
-/* ------------- Navigation bar ------------- */
-
-nav {
-   background-color: rgb(204, 225, 233);
-   padding: 0rem;
-   height: 0;
-   min-height: 8vh;
-   overflow: hidden;
-   position: relative;
-}
-
-.nav-link:hover {
-   background-color: rgba(0, 76, 148, 0.8);
-   cursor: pointer;
-}
-
-.link-1:hover a, .link-2:hover a, .link-3:hover a {
-   color: #fff;
-}
-
-/* --- Navigation bar blog name --- */
-
-.blog-name {
-   font-size: 1.9rem;
-   padding: 1.5rem 1rem;
-   display: block;
-   font-family: 'Roboto', sans-serif;
-}
-
-/* --- Navigation bar middle list --- */
-
-.top-nav-flex {
-   display: flex;
-   flex-direction: row;
-   flex-wrap: wrap;
-   border: solid rgb(217, 255, 0) 0px;
-}
-
-.top-nav {
-   justify-content: space-between;
-}
-
-.nav-items {
-   display: flex;
-   margin: 0;
-   height: 6rem;
-   padding: 0em 10px;
-   position: relative;
-   border: solid rgb(255, 0, 0) 0px;
-}
-
-.nav-link {
-   padding: 1.7rem 1rem;
-   font-size: 1.5rem;
-   font-family: 'Roboto', sans-serif;
-   position: relative;
-   border: solid rgb(14, 226, 138) 0px;
-}
-
-/* --- Navigation bar icons --- */
-
-.social-icons {
-   padding: 2.1rem 2rem;
-}
-
-.social-icons i {
-   padding: 0rem 0.2rem;
-   size: 1rem;
-}
-
-.social-icons i:hover {
-   color: #a1c4cf;
-}
-
-/* ------------- Header Section ------------- */
-
-.head-conatiner {
-   height: 800px;
-   background-image: url("../images/header.png");
-   background-position: center;
-   background-repeat: no-repeat;
-   background-size: cover;
 }
 
 /* ------------- Main Section ------------- */
@@ -237,7 +124,6 @@ p {
    margin: 15px 0;
    padding: 20px;
    background-color: #eee;
-   /* border: solid #0d0d0d 2px; */
 }
 
 input {
