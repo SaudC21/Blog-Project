@@ -149,7 +149,8 @@ p {
 }
 
 .cpu-caption {
-   margin: 5px 20px;
+   margin: 3px 20px;
+   text-align: center;
 }
 
 .author-img {
