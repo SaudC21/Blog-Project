@@ -103,16 +103,6 @@ nav {
    color: #a1c4cf;
 }
 
-/* ------------- Header Section ------------- */
-
-.head-conatiner {
-   height: 800px;
-   background-image: url("../images/header.png");
-   background-position: center;
-   background-repeat: no-repeat;
-   background-size: cover;
-}
-
 @media (max-width: 540px) {
    nav {
       padding: 0rem;
