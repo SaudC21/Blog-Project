@@ -37,17 +37,9 @@ nav {
    padding: 0rem;
    height: 0;
    min-height: 8vh;
-   overflow: hidden;
+   /* overflow: hidden; */
    position: relative;
-}
-
-.nav-link:hover {
-   background-color: rgba(0, 76, 148, 0.8);
-   cursor: pointer;
-}
-
-.link-1:hover a, .link-2:hover a, .link-3:hover a {
-   color: #fff;
+   border: aqua solid;
 }
 
 /* --- Navigation bar blog name --- */
@@ -55,8 +47,10 @@ nav {
 .blog-name {
    font-size: 1.9rem;
    padding: 1.5rem 1rem;
+   padding-bottom: 0;
    display: block;
    font-family: 'Roboto', sans-serif;
+   border: gold solid;
 }
 
 /* --- Navigation bar middle list --- */
@@ -65,7 +59,7 @@ nav {
    display: flex;
    flex-direction: row;
    flex-wrap: wrap;
-   border: solid rgb(217, 255, 0) 0px;
+   border: slateblue solid;
 }
 
 .top-nav {
@@ -75,10 +69,9 @@ nav {
 .nav-items {
    display: flex;
    margin: 0;
-   height: 6rem;
+   height: 4.9rem;
    padding: 0em 10px;
    position: relative;
-   border: solid rgb(255, 0, 0) 0px;
 }
 
 .nav-link {
@@ -86,13 +79,24 @@ nav {
    font-size: 1.5rem;
    font-family: 'Roboto', sans-serif;
    position: relative;
-   border: solid rgb(14, 226, 138) 0px;
+   /* border: solid rgb(14, 226, 138) 2px; */
+}
+
+
+.nav-link:hover {
+   background-color: rgba(0, 76, 148, 0.8);
+   cursor: pointer;
+}
+
+.link-1:hover a, .link-2:hover a {
+   color: #fff;
 }
 
 /* --- Navigation bar icons --- */
 
 .social-icons {
    padding: 2.1rem 2rem;
+   border: solid rgb(14, 226, 138) 2px;
 }
 
 .social-icons i {
@@ -112,4 +116,69 @@ nav {
    background-position: center;
    background-repeat: no-repeat;
    background-size: cover;
+}
+
+@media (max-width: 800px) {
+
+}
+
+@media (max-width: 480px) {
+   nav {
+      padding: 0rem;
+      height: 0;
+      min-height: 30vh;
+   }
+   
+   /* --- Navigation bar blog name --- */
+   
+   .blog-name {
+      font-size: 1.9rem;
+      padding: 1.5rem 1rem;
+   }
+   
+   /* --- Navigation bar middle list --- */
+   
+   .top-nav-flex {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      border: slateblue solid;
+   }
+   
+   .top-nav {
+      justify-content: space-between;
+   }
+   
+   .nav-items {
+      display: flex;
+      margin: 0;
+      height: 4.9rem;
+      padding: 0.2em 0px;
+      position: relative;
+   }
+   
+   .nav-link {
+      padding: 1.7rem 0.5rem;
+      font-size: 1.5rem;
+      font-family: 'Roboto', sans-serif;
+      position: relative;
+      /* border: solid rgb(14, 226, 138) 2px; */
+   }
+   
+   .nav-link:hover {
+      background-color: rgba(0, 76, 148, 0.8);
+      cursor: pointer;
+   }
+   
+   /* --- Navigation bar icons --- */
+   
+   .social-icons {
+      padding: 2.1rem 2rem;
+      border: solid rgb(14, 226, 138) 2px;
+   }
+   
+   .social-icons i {
+      padding: 0rem 0.2rem;
+      size: 1rem;
+   }
 }
