@@ -1,2 +1,2 @@
 # Blog-Project
- Respnsive blog using HTML and CSS 
+ Respnsive blog using only HTML and CSS.
